@@ -1,9 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <link rel="icon" type="image/png" href="favicon.png" />
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Mark Wesolowski — Resume</title>
+  <title>Mark Wesolowski | Resume</title>
   <meta name="description" content="Resume and portfolio for Mark Wesolowski. Leadership, customer experience, operations, and technical problem solving." />
   <script type="application/ld+json">
   {
@@ -16,7 +17,6 @@
     "@type": "PostalAddress",
     "addressLocality": "Tucson",
     "addressRegion": "AZ",
-    "postalCode": "85742",
     "addressCountry": "US"
   },
   "sameAs": [
@@ -62,17 +62,19 @@
     a:hover { text-decoration: underline; }
     .container { max-width: 1000px; margin: 0 auto; padding: 28px 20px 80px; }
     header.main { display: grid; grid-template-columns: 1fr; gap: 16px; margin-bottom: 22px; }
-    @media(min-width: 720px) {
-      header.main { grid-template-columns: 1.3fr .7fr; align-items: end; }
+    @media(min-width: 900px) {
+      header.main { grid-template-columns: 170px 1fr 1fr; align-items: center; }
+      .info { grid-column: 2 / span 2; }
     }
     h1 { margin: 0; font-size: 2rem; }
     .meta p { margin: 4px 0; color: var(--muted); }
-    .actions { display: flex; gap: 10px; flex-wrap: wrap; margin-top: 6px; }
+    .actions { display: inline-flex; gap: 8px; flex-wrap: wrap; margin-top: 6px; }
     .btn { background: var(--accent); color: #0b1020; border: 0; padding: 10px 14px; border-radius: 10px; font-weight: 600; cursor: pointer; }
-    .grid { display: grid; grid-template-columns: 1fr; gap: 14px; }
+    .skills-grid { display: grid; grid-template-columns: 1fr; gap: 14px; }
     @media(min-width: 900px) {
-      .grid-2 { grid-template-columns: 1fr 1fr; }
+      .skills-grid { grid-template-columns: repeat(3, 1fr); }
     }
+    .grid { display: grid; grid-template-columns: 1fr; gap: 14px; }
     section.card, article.card { background: linear-gradient(180deg, rgba(17,24,39,0.9), rgba(17,24,39,0.8)); border: 1px solid var(--border); border-radius: 14px; padding: 16px 16px; }
     .section-title { margin-top: 28px; margin-bottom: 10px; font-size: 1.15rem; letter-spacing: .2px; color: #f3f4f6;}
     .pill-list { display: flex; gap: 8px; flex-wrap: wrap; padding-left: 0; list-style: none; margin: 6px 0 0 0; }
@@ -83,30 +85,28 @@
     .dates { white-space: nowrap; color: #cbd5e1; font-variant-numeric: tabular-nums; }
     ul { margin: 10px 0 0 18px; }
     li { margin: 6px 0; }
+    .headshot { width: 150px; height: 150px; border-radius: 50%; object-fit: cover; border: 3px solid var(--accent); margin-bottom: 14px; justify-self: start; }
     footer { margin-top: 40px; color: var(--muted); text-align: center; font-size: .95rem; }
-    .headshot { width: 150px; height: 150px; border-radius: 50%; object-fit: cover; border: 3px solid var(--accent); margin-bottom: 14px; }
   </style>
 </head>
 <body>
   <div class="container">
     <header class="main">
       <img src="Headshot-rounded.png" alt="Mark Wesolowski headshot" class="headshot" />
-      <div>
+      <div class="info">
         <h1>Mark Wesolowski</h1>
         <div class="meta">
-          <p>Tucson, AZ, 85742</p>
-          <p><a href="mailto:mark.c.wesolowski@gmail.com">mark.c.wesolowski@gmail.com</a> · <a href="tel:+15202302022">(520) 230-2022</a></p>
-          <p><a href="https://linkedin.com/in/mark-wesolowski/" target="_blank" rel="noopener">LinkedIn</a></p>
+          <p>Tucson, AZ</p>
+          <p><a href="mailto:mark.c.wesolowski@gmail.com">mark.c.wesolowski@gmail.com</a> · <a href="tel:+15202302022">(520) 230-2022</a> · <a href="https://linkedin.com/in/mark-wesolowski/" target="_blank" rel="noopener">LinkedIn</a></p>
         </div>
         <div class="actions">
-          <!-- Replace the href with your hosted PDF if desired -->
           <a class="btn" href="#" title="Download PDF">Download PDF</a>
         </div>
       </div>
     </header>
 
     <h2 class="section-title">Core Skills</h2>
-    <div class="grid grid-2">
+    <div class="skills-grid">
       
     <section class="card">
       <h3>Leadership & Operations</h3>
@@ -147,6 +147,21 @@
 
     <h2 class="section-title">Experience</h2>
     <div class="grid">
+      <article class="card">
+      <header class="role-header">
+        <div>
+          <h3>Staff Support Engineer</h3>
+          <p><a href="http://www.goabstract.com/" target="_blank" rel="noopener">Abstract Studio Design</a> • Remote</p>
+        </div>
+        <div class="dates">May 2022 – Present</div>
+      </header>
+      <ul>
+        <li>Troubleshot and resolved complex software issues, ensuring high customer satisfaction.</li>
+<li>Mentored new hires and built knowledge resources that improved onboarding.</li>
+<li>Coordinated with cross-functional teams to implement solutions and prevent recurring problems.</li>
+<li>Delivered reliable customer support in a fast-paced, high-accountability environment.</li>
+      </ul>
+    </article>
       
     <article class="card">
       <header class="role-header">
@@ -165,21 +180,7 @@
     </article>
     
 
-    <article class="card">
-      <header class="role-header">
-        <div>
-          <h3>Staff Support Engineer</h3>
-          <p><a href="http://www.goabstract.com/" target="_blank" rel="noopener">Abstract Studio Design</a> • Remote</p>
-        </div>
-        <div class="dates">May 2022 – Present</div>
-      </header>
-      <ul>
-        <li>Troubleshot and resolved complex software issues, ensuring high customer satisfaction.</li>
-<li>Mentored new hires and built knowledge resources that improved onboarding.</li>
-<li>Coordinated with cross-functional teams to implement solutions and prevent recurring problems.</li>
-<li>Delivered reliable customer support in a fast-paced, high-accountability environment.</li>
-      </ul>
-    </article>
+    
     
 
     <article class="card">
@@ -256,13 +257,13 @@
         </div>
         <div class="dates">Aug 2018 – May 2020</div>
       </header>
-      <p class='edu-notes'>Summa Cum Laude, 4.0 GPA</p>
+      <p class='edu-notes'>Summa Cum Laude</p>
     </article>
     
     </div>
 
     <footer>
-      © Mark Wesolowski. Built as a single-file resume site for fast hosting.
+      © Mark Wesolowski 2025
     </footer>
   </div>
 </body>
